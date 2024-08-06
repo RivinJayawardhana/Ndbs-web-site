@@ -1,0 +1,815 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+	<!-- meta data -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+	<!--font-family-->
+	
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+	<!-- title of site -->
+	<title>NDBS</title>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+	<!-- For favicon png -->
+	<link rel="shortcut icon" type="image/icon" href="assets/logo/ndblogo.png"/>
+	<!--font-awesome.min.css-->
+   
+	<!--linear icon css-->
+	<link rel="stylesheet" href="assets/css/linearicons.css">
+
+	<!--animate.css-->
+	<link rel="stylesheet" href="assets/css/animate.css">
+
+	<!--flaticon.css-->
+	<link rel="stylesheet" href="assets/css/flaticon.css">
+
+	<!--slick.css-->
+	<link rel="stylesheet" href="assets/css/slick.css">
+	<link rel="stylesheet" href="assets/css/slick-theme.css">
+	
+	<!--bootstrap.min.css-->
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	
+	<!-- bootsnav -->
+	<link rel="stylesheet" href="assets/css/bootsnav.css" >	
+	
+	<!--style.css-->
+	<link rel="stylesheet" href="assets/css/style.css">
+	
+	<!--responsive.css-->
+	<link rel="stylesheet" href="assets/css/responsive.css">
+	
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		
+	<![endif]-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<style>
+
+
+
+
+
+
+body {
+	font-family:Verdana, Geneva, Tahoma, sans-serif3;
+
+}
+
+	.welcome-hero {
+		position: relative;
+		text-align: center;
+		height: 750px;
+		z-index: 1;
+		overflow: hidden;
+	}
+	.carousel-inner .item {
+		height: 750px;
+	}
+	.carousel-inner .item:nth-child(1) {
+		background: url('/assets/c4.jpg') no-repeat center center;
+		background-size: cover;
+	}
+	.carousel-inner .item:nth-child(2) {
+		background: url('/assets/c2.jpg') no-repeat center center;
+		background-size: cover;
+	}
+	.carousel-inner .item:nth-child(3) {
+		background: url('/assets/c3.jpg') no-repeat center center;
+		background-size: cover;
+	}
+	.welcome-hero:before {
+		position: absolute;
+		content: " ";
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background:rgba(65,73,89,.65);
+		z-index: -1;
+	}
+	.welcome-hero-txt {
+		padding-top: 155px;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		color: #fff;
+	}
+	.welcome-hero-txt h2 {
+		font-size: 48px;
+		color: #fff;
+		font-weight: 700;
+		text-transform: uppercase;
+		letter-spacing: 2.4px;
+		line-height: 1.4;
+	}
+	.welcome-hero-txt p {
+		font-size: 18px;
+		color: #fcfcfc;
+		margin-top: 25px;
+	}
+
+	.custom-icon {
+	color: black !important;
+}
+.single-blog-item {
+display: flex;
+flex-direction: column;
+height: 100%;
+border: 1px solid #ddd; /* Optional: Add a border for better visualization */
+}
+
+.single-blog-item-img img {
+width: 100%;
+height: auto;
+}
+
+.single-blog-item-txt {
+display: flex;
+flex-direction: column;
+flex-grow: 1;
+padding: 20px;
+}
+
+.btn_box {
+margin-top: auto;
+text-align: center;
+}
+
+.btn_box button {
+padding: 10px 20px;
+background-color: red;
+color: #fff;
+border: none;
+cursor: pointer;
+}
+
+.btn_box button:hover {
+background-color: red;
+}
+
+
+</style>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+	<script>
+		function initMap() {
+			// The location of the place you want to mark
+			var location = {lat: -34.397, lng: 150.644};
+			// The map, centered at the location
+			var map = new google.maps.Map(document.getElementById('googleMap'), {
+				zoom: 10,
+				center: location
+			});
+			// The marker, positioned at the location
+			var marker = new google.maps.Marker({
+				position: location,
+				map: map
+			});
+		}
+	</script>
+
+</head>
+
+<body style=" font-family:Verdana, Geneva, Tahoma, sans-serif3;">
+	<!--[if lte IE 9]>
+		<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+	<![endif]-->
+	
+	<!--header-top start -->
+	<header id="header-top" class="header-top">
+		<ul>
+			<li>
+				<div class="header-top-left" >
+					<ul>
+						<li class="select-opt">
+							<select name="language" id="language" style="font-size:medium;">
+								<option value="default">ENGLISH</option>
+								<option value="Bangla">SINHALA</option>
+								<option value="Arabic">TAMIL</option>
+							</select>
+						</li>
+					
+						
+					</ul>
+				</div>
+			</li>
+			<li class="head-responsive-right pull-right">
+				<div class="header-top-right">
+					<ul>
+						<li class="header-top-contact">
+							+1 222 777 6565
+						</li>
+						
+					</ul>
+				</div>
+			</li>
+		</ul>
+				
+	</header><!--/.header-top-->
+	<!--header-top end -->
+
+	<!-- top-area Start -->
+	<section class="top-area" style="color: black;">
+		<div class="header-area">
+			<!-- Start Navigation -->
+			<nav class="navbar navbar-default bootsnav  navbar-sticky navbar-scrollspy"  data-minus-value-desktop="70" data-minus-value-mobile="55" data-speed="1000" style="color: black;">
+
+				<div class="container" style="width: 100%;font-family:Verdana, Geneva, Tahoma, sans-serif3;color: black;margin-left: 70px;">
+
+				  
+					<div class="navbar-header" style="width: 8%;">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+							<i class="fa fa-bars"></i>
+						</button>
+					  <img src="./assets/images/ndblogo.png" style="width:90%;" >
+					</div>
+				  
+
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse menu-ui-design" id="navbar-menu" >
+						<ul class="nav navbar-nav navbar-left" data-in="fadeInDown" data-out="fadeOutUp" style="margin-left: 0%;">
+							<li class="scroll dropdown">
+								<a href="index.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+								Home <span class="caret"></span>
+								</a>
+							
+							</li>
+							
+							<li class="scroll dropdown">
+								<a href="about.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+									Who we are <span class="caret"></span>
+								</a>
+								<ul class="dropdown-menu">
+									<li class="scroll"><a href="about.html">About us</a></li>
+									<li class="scroll"><a href="#contact">The Group</a></li>
+									<li class="scroll"><a href="#contact">Conglomerate</a></li>
+									<li class="scroll"><a href="#contact">Leadership</a></li>
+									<li class="scroll"><a href="#contact">policies</a></li>
+								</ul>
+							</li>
+							<li class="scroll dropdown">
+								<a href="#explore" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+									Research<span class="caret"></span>
+								</a>
+								<ul class="dropdown-menu">
+									<li class="scroll"><a href="#reviews">Stock Scanner</a></li>
+									<li class="scroll"><a href="#contact">Market Inside Analysis</a></li>
+									<li class="scroll"><a href="#contact">Market Inside Analysis</a></li>
+									<li class="scroll"><a href="#contact">Sector Report</a></li>
+									<li class="scroll"><a href="#contact">Educational Content</a></li>
+									<li class="scroll"><a href="#contact">FAQ & Support</a></li>
+								</ul>
+							</li>
+							<li class="scroll dropdown">
+								<a href="#explore" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+									Acc Opening<span class="caret"></span>
+								</a>
+								<ul class="dropdown-menu">
+									<li class="scroll"><a href="#reviews">Acc Template</a></li>
+									<li class="scroll"><a href="#contact">Termination Clauses</a></li>
+									<li class="scroll"><a href="#contact">Risk Assesment</a></li>
+									<li class="scroll"><a href="#contact">Terms & Conditions</a></li>
+								
+								</ul>
+							</li>
+							<li class="scroll dropdown">
+								<a href="#explore" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+									Market news <span class="caret"></span>
+								</a>
+								<ul class="dropdown-menu">
+									<li class="scroll"><a href="#reviews">Daily</a></li>
+									<li class="scroll"><a href="#contact">IPO's(new tab)</a></li>
+									<li class="scroll"><a href="#contact">Right Issues</a></li>
+									<li class="scroll"><a href="#contact">Watch List</a></li>
+									<li class="scroll"><a href="#contact">De List</a></li>
+									<li class="scroll"><a href="#contact">Exchange Rates</a></li>
+									<li class="scroll"><a href="#contact">Foriegn Selling/Buying</a></li>
+								
+								</ul>
+							</li>
+
+							<li class="scroll dropdown">
+								<a href="#explore" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+									Foriegn <span class="caret"></span>
+								</a>
+								<ul class="dropdown-menu">
+									<li class="scroll"><a href="#reviews">Heritage</a></li>
+									<li class="scroll"><a href="#contact">Dollar/Euro cal</a></li>
+									<li class="scroll"><a href="#contact">Acc Opening</a></li>
+									<li class="scroll"><a href="#contact">Partnership</a></li>
+								
+								
+								</ul>
+							</li>
+							<li class="scroll dropdown">
+								<a href="#explore" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+									My Acc <span class="caret"></span>
+								</a>
+								<ul class="dropdown-menu">
+									<li class="scroll"><a href="#reviews">Profile</a></li>
+									
+								
+								
+								</ul>
+							</li>
+							<li class="">
+								<a href="#explore"   role="button" aria-haspopup="true" aria-expanded="false">
+									Careers <span class="caret"></span>
+								</a>
+							
+							</li>
+							
+						</ul><!--/.nav -->
+					</div><!-- /.navbar-collapse -->
+					
+				</div><!--/.container-->
+			</nav><!--/nav-->
+			<!-- End Navigation -->
+		</div><!--/.header-area-->
+		<div class="clearfix"></div>
+
+	</section><!-- /.top-area-->
+	<!-- top-area End -->
+
+		<!--welcome-hero start -->
+		<section id="home" class="welcome-hero">
+			<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+				<!-- Indicators -->
+				<ol class="carousel-indicators">
+					<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+					<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+					<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+				</ol>
+	
+				<!-- Wrapper for slides -->
+				<div class="carousel-inner" role="listbox">
+					<div class="item active">
+						<div class="container">
+							<div class="welcome-hero-txt">
+								<h2>We add value to <br> your investment</h2>
+								<p></p>
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="container">
+							<div class="welcome-hero-txt">
+								<h2>We add value to <br> your investment</h2>
+								<p></p>
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="container">
+							<div class="welcome-hero-txt">
+								<h2>We add value to <br> your investment</h2>
+								<p></p>
+							</div>
+						</div>
+					</div>
+				</div>
+	
+				<!-- Controls -->
+				<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+					<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+					<span class="sr-only">Previous</span>
+				</a>
+				<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+					<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+					<span class="sr-only">Next</span>
+				</a>
+			</div>
+		</section>
+	
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+		<!--list-topics end-->
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <div class="container-xxl py-5">
+    <div class="container text-center">
+        <div class="row g-4 justify-content-center">
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="d-flex py-5 px-4">
+                    <i class="fa fa-certificate fa-3x text-primary flex-shrink-0 custom-icon"></i>
+                    <div class="ps-4">
+                        <h5 class="mb-3">Quality Servicing</h5>
+                        <p>Diam dolor diam ipsum sit amet diam et eos erat ipsum</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="d-flex py-5 px-4">
+                    <i class="fa fa-certificate fa-3x text-primary flex-shrink-0 custom-icon"></i>
+                    <div class="ps-4">
+                        <h5 class="mb-3">Quality Servicing</h5>
+                        <p>Diam dolor diam ipsum sit amet diam et eos erat ipsum</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="d-flex py-5 px-4">
+                    <i class="fa fa-certificate fa-3x text-primary flex-shrink-0 custom-icon"></i>
+                    <div class="ps-4">
+                        <h5 class="mb-3">Quality Servicing</h5>
+                        <p>Diam dolor diam ipsum sit amet diam et eos erat ipsum</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<br>
+<br>
+ <section id="works" class="works" style="height: 400px;">
+	
+		<div class="section-header">
+			
+		<div class="container">
+			<div class="section-header">
+				<h2 style="color: red;">What we offer</h2>
+		
+			</div><!--/.section-header-->
+			<div class="blog-content">
+				<div class="row">
+					<div class="col-md-4 col-sm-6" >
+						<div class="single-blog-item">
+							<div class="single-blog-item-img">
+								<img src="assets/b1.jpg" alt="blog image">
+							</div>
+							<div class="single-blog-item-txt">
+								<h2><a href="#">Quoted equity investments  </a></h2>
+								
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6"  >
+						<div class="single-blog-item">
+							<div class="single-blog-item-img">
+								<img src="assets/b1.jpg" alt="blog image">
+							</div>
+							<div class="single-blog-item-txt">
+								<h2><a href="#">Discover  market opportunities  </a></h2>
+								
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6" >
+						<div class="single-blog-item" >
+							<div class="single-blog-item-img">
+								<img src="assets/b1.jpg" alt="blog image">
+							</div>
+							<div class="single-blog-item-txt">
+								<h2><a href="#">Invest in a diverse range of funds</a></h2>
+								
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><!--/.container--><!--/.section-header
+		<div class="works-content">
+			<div class="row">
+				<div class="col-md-4 col-sm-6">
+					<div class="single-how-works">
+						<div class="single-how-works-icon">
+							<i class="flaticon-lightbulb-idea"></i>
+						</div>
+						<h2><a href="#">Equity  <span> </span> </a></h2>
+						<p>
+							Lorem ipsum dolor sit amet, consecte adipisicing elit, sed do eiusmod tempor incididunt ut laboremagna aliqua. 
+						</p>
+						<button class="welcome-hero-btn how-work-btn" onclick="window.location.href='#'">
+							read more
+						</button>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6">
+					<div class="single-how-works">
+						<div class="single-how-works-icon">
+							<i class="flaticon-networking"></i>
+						</div>
+						<h2><a href="#">Debt  <span> </span></a></h2>
+						<p>
+							Lorem ipsum dolor sit amet, consecte adipisicing elit, sed do eiusmod tempor incididunt ut laboremagna aliqua. 
+						</p>
+						<button class="welcome-hero-btn how-work-btn" onclick="window.location.href='#'">
+							read more
+						</button>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6">
+					<div class="single-how-works">
+						<div class="single-how-works-icon">
+							<i class="flaticon-location-on-road"></i>
+						</div>
+						<h2><a href="#">Mutual Funds  <span> </span> </a></h2>
+						<p>
+							Lorem ipsum dolor sit amet, consecte adipisicing elit, sed do eiusmod tempor incididunt ut laboremagna aliqua. 
+						</p>
+						<button class="welcome-hero-btn how-work-btn" onclick="window.location.href='#'">
+							read more
+						</button>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6">
+					<div class="single-how-works">
+						<div class="single-how-works-icon">
+							<i class="flaticon-location-on-road"></i>
+						</div>
+						<h2><a href="#">Group Products  <span> </span> </a></h2>
+						<p>
+							Lorem ipsum dolor sit amet, consecte adipisicing elit, sed do eiusmod tempor incididunt ut laboremagna aliqua. 
+						</p>
+						<button class="welcome-hero-btn how-work-btn" onclick="window.location.href='#'">
+							read more
+						</button>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6">
+					<div class="single-how-works">
+						<div class="single-how-works-icon">
+							<i class="flaticon-location-on-road"></i>
+						</div>
+						<h2><a href="#">Products of NDBS <span> </span> </a></h2>
+						<p>
+							Lorem ipsum dolor sit amet, consecte adipisicing elit, sed do eiusmod tempor incididunt ut laboremagna aliqua. 
+						</p>
+						<button class="welcome-hero-btn how-work-btn" onclick="window.location.href='#'">
+							read more
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>-->
+	</div>
+
+</section><!--/.works-->
+		<!--works start -->
+		<section id="works" class="works">
+			
+			</div><!--/.container-->
+		
+		</section><!--/.works-->
+		<!--works end -->
+
+		<!--explore start -->
+		<section id="explore" class="explore">
+			<div class="container">
+			</div>
+
+		</section><!--/.explore-->
+		<!--explore end -->
+
+		<!--reviews start -->
+		
+
+		<!-- statistics strat -->
+		<section id="statistics"  class="statistics">
+			<div class="container">
+				<div class="statistics-counter"> 
+					
+					
+					
+					<div class="col-md-3 col-sm-6" style="margin-left: 38%;">
+						<div class="single-ststistics-box">
+							<div class="statistics-content">
+								<div class="counter">30</div> <span>k+</span>
+							</div><!--/.statistics-content-->
+							<h3>happy clients</h3>
+						</div><!--/.single-ststistics-box-->
+					</div><!--/.col-->
+				</div><!--/.statistics-counter-->	
+			</div><!--/.container-->
+
+		</section><!--/.counter-->	
+		<!-- statistics end -->
+
+		<!--blog start -->
+		<section id="blog" class="blog" style="color: black;background-color: rgb(236, 236, 236);">
+			<div class="container">
+				<div class="section-header">
+					<h2>news and articles</h2>
+					<p>Always up to date with our latest News and Articles</p>
+				</div><!--/.section-header-->
+				<div class="blog-content" style="color: black;">
+					<div class="row">
+						<div class="col-md-4 col-sm-6" style="width: 100%;">
+							<div class="single-blog-item">
+								<div class="single-blog-item-img">
+									<img src="assets/c4.jpg" alt="blog image" style="height: 560px;">
+								</div>
+								<div class="single-blog-item-txt" style="color: black;" >
+									<h2><a href="#" style="color: black;">Lorem ipsum dolor sit amet, consectetur adipisicing elit,</a></h2>
+									<h4>posted <span>by</span> <a href="#" style="color: black;">admin</a> March 2018</h4>
+									<p>
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+									</p>
+									<div class="btn_box">
+										<button>
+											Read More>>
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6" style="color: black;width: 40%;">
+							<div class="single-blog-item">
+								<div class="single-blog-item-img">
+									<img src="assets/b5.jpg" alt="blog image" style="height: 260px;">
+								</div>
+								<div class="single-blog-item-txt">
+									<h2><a href="#" style="color: black;">Lorem ipsum dolor sit amet, consectetur adipisicing elit,</a></h2>
+									<h4>posted <span>by</span> <a href="#" style="color: black;">admin</a> March 2018</h4>
+									<p>
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+									</p>
+									<div class="btn_box">
+										<button>
+											Read More>>
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6" style="color: black;width: 60%;">
+							<div class="single-blog-item">
+								<div class="single-blog-item-img">
+									<img src="assets/b3.jpg" alt="blog image" style="height: 340px;">
+								</div>
+								<div class="single-blog-item-txt">
+									<h2 style="color: black;"><a href="#" style="color: black;">Lorem ipsum dolor sit amet, consectetur adipisicing elit,</a></h2>
+									<h4>posted <span>by</span> <a href="#" style="color: black;">admin</a> March 2018</h4>
+									<p >
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+									</p>
+									<div class="btn_box">
+										<button>
+											Read More>>
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div><!--/.container-->
+		</section><!--/.blog-->
+		<!--blog end -->
+		
+
+		<!--subscription strat -->
+		  <!-- contact section -->
+		  <section class="contact_section layout_padding">
+			<div class="container">
+			  <div class="heading_container">
+				<h2>
+				  Contact Us
+				</h2>
+			  </div>
+			  <div class="row">
+				<div class="col-md-6">
+				  <div class="form_container">
+					<form action="">
+					  <div>
+						<input type="text" placeholder="Your Name" />
+					  </div>
+					  <div>
+						<input type="text" placeholder="Phone Number" />
+					  </div>
+					  <div>
+						<input type="email" placeholder="Email" />
+					  </div>
+					  <div>
+						<input type="text" class="message-box" placeholder="Message" />
+					  </div>
+					  <div class="btn_box">
+						<button>
+						  SEND
+						</button>
+					  </div>
+					</form>
+				  </div>
+				</div>
+				<div class="col-md-6 ">
+				  <div class="map_container">
+					<div class="map">
+					  <div id="googleMap">		<img src="assets/map.jpg" alt="blog image" ></div>
+					</div>
+				  </div>
+				</div>
+			  </div>
+			</div>
+		  </section>
+		  <!-- end contact section -->
+
+		</section><!--/subscription-->	
+		<!--subscription end -->
+
+		<!--footer start-->
+		<footer id="footer"  class="footer" >
+			<div class="container">
+				<div class="footer-menu" style="height: 40px;">
+		           	<div class="row">
+			           	<div class="col-sm-3">
+			           		 <div class="navbar-header">
+								<img src="./assets/images/ndblogo.png" style="width: 32%;" >
+				            </div><!--/.navbar-header-->
+			           	</div>
+			           	<div class="col-sm-9">
+			           		<ul class="footer-menu-item"3>
+			                    <li class="scroll"><a href="#works">Home</a></li>
+			                    <li class="scroll"><a href="#explore">Who we are</a></li>
+			                    <li class="scroll"><a href="#reviews">What we do</a></li>
+			                    <li class="scroll"><a href="#blog">Corporate responsibility</a></li>
+			                    <li class="scroll"><a href="#contact">Media room</a></li>
+			                    <li class=" scroll"><a href="#contact">Careers</a></li>
+							
+					
+			                </ul><!--/.nav -->
+			           	</div>
+		           </div>
+				</div>
+				<div class="hm-footer-copyright">
+					<div class="row">
+						<div class="col-sm-5">
+							<p>
+								&copy;copyright. designed and developed by NDBS
+							</p><!--/p-->
+						</div>
+						<div class="col-sm-7">
+							<div class="footer-social">
+								<span><i class="fa fa-phone"> +1  (222) 777 8888</i></span>
+								<a href="#"><i class="fa fa-facebook"></i></a>	
+								<a href="#"><i class="fa fa-twitter"></i></a>
+								<a href="#"><i class="fa fa-linkedin"></i></a>
+								<a href="#"><i class="fa fa-google-plus"></i></a>
+							</div>
+						</div>
+					</div>
+					
+				</div><!--/.hm-footer-copyright-->
+			</div><!--/.container-->
+
+			<div id="scroll-Top">
+				<div class="return-to-top">
+					<i class="fa fa-angle-up " id="scroll-top" data-toggle="tooltip" data-placement="top" title="" data-original-title="Back to Top" aria-hidden="true"></i>
+				</div>
+				
+			</div><!--/.scroll-Top-->
+			
+        </footer><!--/.footer-->
+		<!--footer end-->
+		
+		<!-- Include all js compiled plugins (below), or include individual files as needed -->
+
+		<script src="assets/js/jquery.js"></script>
+        
+        <!--modernizr.min.js-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+		
+		<!--bootstrap.min.js-->
+        <script src="assets/js/bootstrap.min.js"></script>
+		
+		<!-- bootsnav js -->
+		<script src="assets/js/bootsnav.js"></script>
+
+        <!--feather.min.js-->
+        <script  src="assets/js/feather.min.js"></script>
+
+        <!-- counter js -->
+		<script src="assets/js/jquery.counterup.min.js"></script>
+		<script src="assets/js/waypoints.min.js"></script>
+
+        <!--slick.min.js-->
+        <script src="assets/js/slick.min.js"></script>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+		     
+        <!--Custom JS-->
+        <script src="assets/js/custom.js"></script>
+        
+    </body>
+	
+</html>
