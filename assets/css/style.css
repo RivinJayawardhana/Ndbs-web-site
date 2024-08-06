@@ -687,20 +687,22 @@ nav.navbar.bootsnav .navbar-toggle i{color: #111010;}
     height: 100px;
     display: flex;
     align-items: center;
-    background:url(../../assets/transparent-red-background-1.png)no-repeat fixed;
+    background: url(../../assets/transparent-red-background-1.png) no-repeat fixed;
     background-position:center;
     background-size:cover;
     padding:127px 0 120px;
 }
+
 .statistics:before{
     position:absolute;
     content:'';
-
     height:100%;
     width:100%;
     top:0;
     left:0;
+    background-color: rgba(207, 133, 133, 0.5); /* Adjust the opacity as needed */
 }
+
 /* single-ststistics-box */
 .single-ststistics-box {
     text-align: center;

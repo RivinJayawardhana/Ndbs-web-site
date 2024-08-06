@@ -165,6 +165,42 @@
     content: none !important;
 }
 
+.search-bar {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.search-input {
+    width: 50%;
+    padding: 10px 20px;
+    border: 2px solid #ccc;
+    border-radius: 25px 0 0 25px;
+    font-size: 16px;
+    outline: none;
+}
+
+.search-input:focus {
+    border-color: #aa2b0f;
+}
+
+.search-button {
+    padding: 10px 20px;
+    border: 2px solid #aa2b0f;
+    border-radius: 0 25px 25px 0;
+    background-color: #aa2b0f;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    outline: none;
+}
+
+.search-button:hover {
+    background-color: #aa2b0f;
+    border-color: #aa2b0f;
+}
+
+
 
     </style>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -269,7 +305,7 @@
 									</ul>
 								</li>
 								<li class="scroll dropdown">
-									<a href="stocks.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+									<a href="#explore" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
 										Research<span class="caret"></span>
 									</a>
 									<ul class="dropdown-menu">
@@ -354,196 +390,47 @@
 
 		<!--welcome-hero start -->
 
-		<section id="home" class="welcome-hero" style="background-image: url(./assets/stock-market-pd5zksxr07t7a4xu.jpg) ;height: 500px;background-repeat: no-repeat;background-color: none;">
+		<section id="home" class="welcome-hero" style="background-image: url(./assets/ndblogo.jpg) ;height: 500px;background-repeat: no-repeat;background-color: none;">
             <div class="item">
                 <div class="container">
                     <div class="welcome-hero-txt">
-                        <h2>About Us</h2>
+                        <h2>Stocks</h2>
                         <p></p>
                     </div>
                 </div>
             </div>
 		</section>
 	
-        <section id="statistics" class="statistics" style="margin-top: 100px;height: 500px;">
-            <div class="container">
-                <div class="statistics-counter"> 
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-6 col-sm-12 mb-4">
-                                <div class="single-statistics-box" style="height: 100%;">
-                                    <h1 style="color: #fdfafa;">Who we are</h1>
-                                    <div class="statistics-content animate__animated animate__fadeInLeft" style="height: 100%; display: flex; align-items: center;">
-                                        
-                                        <h4 class="custom-font" style="color: #e1d6d6;">Established in 1992, NDB Securities (Pvt) Ltd is a pioneering stock brokering company and a full member of the Colombo Stock Exchange (CSE). We offer comprehensive investment advisory services for listed debt and equity securities and have been a key player in leading major IPOs and debenture listings.
-                                            Known for our ethical practices and compliance, we provide advanced IT infrastructure ensuring top-notch security and client service. Our skilled research team, recognized for top investment returns, offers insights in English, Sinhala, and Tamil. With a global reach through our international network, we strive to maintain rewarding long-term financial relationships with our clients
-                                        </h4>
-                                    </div><!--/.statistics-content-->
-                                </div><!--/.single-statistics-box-->
-                            </div><!--/.col-->
-                            <div class="col-md-6 col-sm-12 mb-4">
-                                <div class="single-statistics-box" style="height: 100%;">
-                                    <div class="statistics-content animate__animated animate__fadeInRight" style="height: 100%; display: flex; align-items: center;">
-                                        <div>		<img src="assets/b3.jpg" alt="blog image"  ></div>
-                                    </div><!--/.statistics-content-->
-                                </div><!--/.single-statistics-box-->
-                            </div><!--/.col-->
-                        </div><!--/.row-->
-                    </div><!--/.container-->
-                </div><!--/.statistics-counter-->
+       
+
+        <br>
+        <br>
+        <section id="blog" class="blog" style="color: black;background-color: rgb(236, 236, 236);">
+            <div class="container" style="width: 100%;">
+                <div class="section-header">
+                    <h2>Search here</h2>
+                    <p></p>
+                </div><!--/.section-header-->
+                
+                <!-- Search Bar -->
+                <div class="search-bar">
+                    <input type="text" class="search-input" placeholder="Search...">
+                    <button type="submit" class="search-button">Search</button>
+                </div>
+                
+                <div class="blog-content" style="color: black;width: 100%;">
+                    
+                    <div>
+                        <img src="./assets/Screenshot 2024-08-06 at 14.45.40.png" height="500px">
+                    </div>
+                </div>
             </div><!--/.container-->
-        </section><!--/.statistics-->
-
-
-
-		<section id="statistics" class="statistics" style="margin-top: 100px; height: 500px; color: #e1d6d6;">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-6 col-sm-12 mb-4">
-						<div class="single-statistics-box h-100">
-							<div class="statistics-content animate__animated animate__fadeInLeft d-flex align-items-center h-100">
-								<div>
-									<h4 class="custom-font" style="color: #e1d6d6;">
-										<p style="color: white; font-size: large;">VISION :</p>
-							
-										To be the most sought-after stock broking firm in Sri Lanka.
-										<br>
-										<br>
-										<p style="color: white; font-size: large;">MISSION :</p>
-								
-										Draw strength from diversity and teamwork to promote the Sri Lankan capital market locally, through the improvement and expansion of the local branch network and globally through attracting and establishing an array of long-standing foreign clientele.
-									</h4>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6 col-sm-12 mb-4">
-						<div class="single-statistics-box h-100">
-							<div class="statistics-content animate__animated animate__fadeInRight d-flex align-items-center h-100">
-								<div>
-									<h4 class="custom-font" style="color: #e1d6d6;">
-										<p style="color: white; font-size: large;">VALUES :</p>
-							
-										
-										Integrity and highest standards of ethical and professional conduct have always been our forte.
-										<br>
-										<br>
-										Passion drives us to reach greater heights whilst endurance makes us immune to industry challenges.
-										<br>
-										<br>
-										Perseverance is the foundation on which we build our clients' future.
-										<br>
-										<br>
-										Continuous Development - We are constantly in pursuit of new opportunities and challenges that would enhance our service levels.
-										<br>
-										<br>
-										Team Work - Our team is our Asset. We work in unity day-in and day-out, to give the best experience to our clientele.
-									</h4>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		
-
-
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-
-		<br>
-		<br>
-		<br>
-		<div style="margin-bottom: 150px;color: #d32d2d;">
-		<div class="container-xxl py-5">
-		   <div class="container text-center">
-			   <div class="row g-4 justify-content-center">
-				   <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-					   <div class="d-flex py-5 px-4">
-						   <i class="fa fa-certificate fa-3x text-primary flex-shrink-0 custom-icon"></i>
-						   <div class="ps-4">
-							   <h5 class="mb-3">Full member of the Colombo Stock Exchange</h5>
-							   <p>Diam dolor diam ipsum sit amet diam et eos erat ipsum</p>
-						   </div>
-					   </div>
-				   </div>
-				   <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-					   <div class="d-flex py-5 px-4">
-						   <i class="fa fa-certificate fa-3x text-primary flex-shrink-0 custom-icon"></i>
-						   <div class="ps-4">
-							   <h5 class="mb-3">Key player in the market</h5>
-							   <p>Diam dolor diam ipsum sit amet diam et eos erat ipsum</p>
-						   </div>
-					   </div>
-				   </div>
-				   <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-					   <div class="d-flex py-5 px-4">
-						   <i class="fa fa-certificate fa-3x text-primary flex-shrink-0 custom-icon"></i>
-						   <div class="ps-4">
-							   <h5 class="mb-3">The ethical stockbroker </h5>
-							   <p>Diam dolor diam ipsum sit amet diam et eos erat ipsum</p>
-						   </div>
-					   </div>
-				   </div>
-			   </div>
-		   </div>
-	   </div>
-	   <br>
-	   <br>
-	   <br>
-	   <br>
-	   <br>
-	   <br>
-	   <div class="container-xxl py-5">
-		  <div class="container text-center">
-			  <div class="row g-4 justify-content-center">
-				  <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-					  <div class="d-flex py-5 px-4">
-						  <i class="fa fa-certificate fa-3x text-primary flex-shrink-0 custom-icon"></i>
-						  <div class="ps-4">
-							  <h5 class="mb-3">Advanced information technology framework</h5>
-							  <p>Diam dolor diam ipsum sit amet diam et eos erat ipsum</p>
-						  </div>
-					  </div>
-				  </div>
-				  <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-					  <div class="d-flex py-5 px-4">
-						  <i class="fa fa-certificate fa-3x text-primary flex-shrink-0 custom-icon"></i>
-						  <div class="ps-4">
-							  <h5 class="mb-3">A rewarding long term financial relationship</h5>
-							  <p>Diam dolor diam ipsum sit amet diam et eos erat ipsum</p>
-						  </div>
-					  </div>
-				  </div>
-				  <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-					  <div class="d-flex py-5 px-4">
-						  <i class="fa fa-certificate fa-3x text-primary flex-shrink-0 custom-icon"></i>
-						  <div class="ps-4">
-							  <h5 class="mb-3">Advisory backed by a highly skilled and experienced research team </h5>
-							  <p>Diam dolor diam ipsum sit amet diam et eos erat ipsum</p>
-						  </div>
-					  </div>
-				  </div>
-			  </div>
-		  </div>
-	  </div>
+        </section><!--/.blog-->
+        
 
 
 
 
-
-	</div>
-
-
-
-
-
-    </body>
 		<!-- statistics end -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
