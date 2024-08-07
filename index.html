@@ -161,6 +161,46 @@ cursor: pointer;
 background-color: red;
 }
 
+.header-top-left {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50px;
+        }
+
+        .select-opt {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 0; /* No gap to connect buttons */
+        }
+		.select-opt button {
+            font-size: small; /* Make font size smaller */
+            padding: 5px 10px; /* Reduce padding */
+            border: 1px solid black;
+            border-right: none; /* Remove right border for all but last button */
+            border-radius: 0; /* Remove border radius */
+            background-color: white;
+            color: black;
+            cursor: pointer;
+			border-radius: 5px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        .select-opt button:last-child {
+            border-right: 1px solid black; /* Add right border to last button */
+        }
+
+        .select-opt button:hover, .select-opt button.selected {
+            background-color: #c74815;
+            color: white;
+        }
+
+        .select-opt button:focus {
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5);
+        }
+
 
 </style>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -195,20 +235,15 @@ background-color: red;
 	<header id="header-top" class="header-top">
 		<ul>
 			<li>
-				<div class="header-top-left" >
-					<ul>
-						<li class="select-opt">
-							<select name="language" id="language" style="font-size:medium;">
-								<option value="default">ENGLISH</option>
-								<option value="Bangla">SINHALA</option>
-								<option value="Arabic">TAMIL</option>
-							</select>
-						</li>
-					
-						
+				<div class="header-top-left">
+					<ul class="select-opt">
+						<li><button id="english-button" onclick="selectLanguage(this)">ENGLISH</button></li>
+						<li><button id="sinhala-button" onclick="selectLanguage(this)">SINHALA</button></li>
+						<li><button id="tamil-button" onclick="selectLanguage(this)">TAMIL</button></li>
 					</ul>
 				</div>
 			</li>
+			
 			<li class="head-responsive-right pull-right">
 				<div class="header-top-right">
 					<ul>
@@ -277,13 +312,13 @@ background-color: red;
 								</ul>
 							</li>
 							<li class="scroll dropdown">
-								<a href="#explore" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+								<a href="Accopening.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
 									Acc Opening<span class="caret"></span>
 								</a>
 								<ul class="dropdown-menu">
-									<li class="scroll"><a href="#reviews">Acc Template</a></li>
-									<li class="scroll"><a href="#contact">Termination Clauses</a></li>
-									<li class="scroll"><a href="#contact">Risk Assesment</a></li>
+									<li class="scroll"><a href="#reviews">Acc Opening</a></li>
+									
+									
 									<li class="scroll"><a href="#contact">Terms & Conditions</a></li>
 								
 								</ul>
@@ -322,7 +357,12 @@ background-color: red;
 									My Acc <span class="caret"></span>
 								</a>
 								<ul class="dropdown-menu">
-									<li class="scroll"><a href="#reviews">Profile</a></li>
+									<li class="scroll"><a href="#reviews">KVC Update</a></li>
+									<li class="scroll"><a href="#reviews">Client Withdrawal Request</a></li>
+									<li class="scroll"><a href="#reviews">Acc Statement Request</a></li>
+									<li class="scroll"><a href="#reviews">E-connect</a></li>
+									<li class="scroll"><a href="#reviews">Request to update settlement details</a></li>
+									<li class="scroll"><a href="#reviews">Internet trading agreement</a></li>
 									
 								
 								
