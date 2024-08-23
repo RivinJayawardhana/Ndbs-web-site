@@ -201,7 +201,32 @@ background-color: red;
             box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5);
         }
 
+        .single-blog-item {
+            text-align: center;
+            padding: 15px;
+            border: 1px solid #ddd;
+            margin-bottom: 30px;
+            transition: transform 0.3s ease-in-out;
+        }
 
+        .single-blog-item:hover {
+            transform: scale(1.05);
+        }
+
+        .single-blog-item-img img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .single-blog-item-txt {
+            margin-top: 15px;
+        }
+
+        @media (max-width: 768px) {
+            .single-blog-item {
+                margin-bottom: 20px;
+            }
+        }
 </style>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -393,7 +418,7 @@ background-color: red;
             <div class="item">
                 <div class="container">
                     <div class="welcome-hero-txt">
-                        <h2>Account Opening</h2>
+                        <h2>Market Inside Analysis</h2>
                         <p></p>
                     </div>
                 </div>
@@ -404,73 +429,48 @@ background-color: red;
 
         <br>
         <br>
-         <section id="works" class="works" style="height: 500px;margin-left: 20%;">
-            
+        <section id="works" class="works" style="height: 500px; margin-left: 0;">
+            <div class="section-header"></div>
+            <div class="container">
                 <div class="section-header">
-                    
-                <div class="container">
-                    <div class="section-header">
-                        <h2 style="color: red;"></h2>
-                
-                    </div>
-                    <div class="blog-content">
-                        <div class="row">
-                            <div class="col-md-4 col-sm-6"  style="width: 20%;height: 260px;">
-                                <div class="single-blog-item">
-                                    <div class="single-blog-item-img">
-                                        <div class="single-blog-item-img">
-                                            <img src="assets/352000_account_box_icon.png" alt="blog image" style="width: 45%;margin-top: 10px;">
-                                        </div>
-                                    <div class="single-blog-item-txt">
-                                        <h2><a href="stockscanner.html" style="color: black;"> Local Individual </a></h2>
-                                        
-                                    </div>
+                    <h2 style="color: red;"></h2>
+                </div>
+                <div class="blog-content">
+                    <div class="row justify-content-center">
+                        <div class="col-md-4 col-sm-6" style="height: 300px;">
+                            <div class="single-blog-item">
+                                <div class="single-blog-item-img">
+                                    <img src="assets/352000_account_box_icon.png" alt="blog image" style="width: 45%; margin-top: 10px;">
+                                </div>
+                                <div class="single-blog-item-txt">
+                                    <h2><a href="stockscanner.html" style="color: black;">Daily, weekly and monthly market updates and summaries</a></h2>
                                 </div>
                             </div>
-                            </div>
-                            <div class="col-md-4 col-sm-6"  style="width: 20%;height: 260px;" >
-                                <div class="single-blog-item">
-                                    <div class="single-blog-item-img">
-                                        <img src="assets/coa.png" alt="blog image" style="width: 45%;margin-top: 10px;">
-                                    </div>
-                                    <div class="single-blog-item-txt">
-                                        <h2><a href="#" style="color: black;">Foreign Individual </a></h2>
-                                        
-                                    </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6" style="height: 300px;">
+                            <div class="single-blog-item">
+                                <div class="single-blog-item-img">
+                                    <img src="assets/coa.png" alt="blog image" style="width: 45%; margin-top: 10px;">
+                                </div>
+                                <div class="single-blog-item-txt">
+                                    <h2><a href="#" style="color: black;">Currency and other snippets</a></h2>
                                 </div>
                             </div>
-                            <div class="col-md-4 col-sm-6"  style="width: 20%;height: 260px;">
-                                <div class="single-blog-item">
-                                    <div class="single-blog-item-img">
-                                        <img src="assets/com.png" alt="blog image" style="width: 45%;margin-top: 10px;">
-                                    </div>
-                                    <div class="single-blog-item-txt">
-                                        <h2><a href="#" style="color: black;">Local Company </a></h2>
-                                        
-                                    </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6" style="height: 300px;">
+                            <div class="single-blog-item">
+                                <div class="single-blog-item-img">
+                                    <img src="assets/com.png" alt="blog image" style="width: 45%; margin-top: 10px;">
+                                </div>
+                                <div class="single-blog-item-txt">
+                                    <h2><a href="#" style="color: black;">Market calendar (dividend and earnings)</a></h2>
                                 </div>
                             </div>
-                            <div class="col-md-4 col-sm-6"  style="width: 20%;height: 260px;">
-                                <div class="single-blog-item">
-                                    <div class="single-blog-item-img">
-                                        <img src="assets/for.png" alt="blog image" style="width: 45%;margin-top: 10px;">
-                                    </div>
-                                    <div class="single-blog-item-txt">
-                                        <h2><a href="#" style="color: black;">Foreign Company</a></h2>
-                                        
-                                    </div>
-                                </div>
-                            </div>
-
-                         
                         </div>
                     </div>
                 </div>
-              
             </div>
-        
         </section>
-
      
 
 
